@@ -51,9 +51,10 @@
 // }
 // console.log(teo === ti);
 //2 : function
-function Person(){
-
+function Person(name , age){
+    this.name = name
+    this.age = age
 }
-const teo = new Person();
+const teo = new Person("Nguyen van teo",10);
 
-console.log(typeof teo);
+console.log(teo.age);
