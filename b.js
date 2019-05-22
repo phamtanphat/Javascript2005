@@ -51,15 +51,28 @@
 // }
 // console.log(teo === ti);
 //2 : function
-function Person(name , age){
-    this.name = name
-    this.age = age
-    this.sayhello = function(){
-        return this.name + " xin chao";
+// function Person(name , age){
+//     this.name = name
+//     this.age = age
+//     this.sayhello = function(){
+//         return this.name + " xin chao";
+//     }
+// }
+// const teo = new Person("Nguyen van teo",10);
+// const ti = teo.sayhello;
+
+
+// console.log(ti.bind({name : 'Nguyen van ti'})());
+//3 : class
+class Person{
+    constructor(name , age){
+        this.name = name
+        this.age = age
+
+    }
+    sayhello(){
+        return `${this.name} xin chao . Hien nay toi ${this.age}`
     }
 }
-const teo = new Person("Nguyen van teo",10);
-const ti = teo.sayhello;
-
-
-console.log(ti.bind(teo)());
+const teo = new Person("nguyen van teo",10);
+console.log(teo.sayhello());
