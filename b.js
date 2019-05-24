@@ -64,15 +64,51 @@
 
 // console.log(ti.bind({name : 'Nguyen van ti'})());
 //3 : class
-class Person{
-    constructor(name , age){
-        this.name = name
-        this.age = age
+// class Person{
+//     constructor(name , age){
+//         this.name = name
+//         this.age = age
 
+//     }
+//     sayhello(){
+//         return `${this.name} xin chao . Hien nay toi ${this.age}`
+//     }
+// }
+// const teo = new Person("nguyen van teo",10);
+// console.log(teo.sayhello());
+// class Triangle{
+//     constructor(cgv1 , cgv2){
+//         this.cgv1 = cgv1
+//         this.cgv2 = cgv2
+//     }
+//     canhhuyen(){
+//         return Math.sqrt(Math.abs(Math.pow(this.cgv1,2) + Math.pow(this.cgv2, 2)))
+//     }
+// }
+// const a = new Triangle(3,4);
+// console.log(a.canhhuyen());
+class Dongvat{
+    constructor(name , age ){
+        this.name = name;
+        this.age = age
+        this.soluong = []
     }
     sayhello(){
-        return `${this.name} xin chao . Hien nay toi ${this.age}`
+        console.log("Hello");
+    }
+    addsoluong(number){
+        this.soluong.push(number)
     }
 }
-const teo = new Person("nguyen van teo",10);
-console.log(teo.sayhello());
+class Meo extends Dongvat{
+    constructor(name , age , tiengnoi){
+       super(name , age);
+        this.tiengnoi = tiengnoi
+    }
+}
+const meoa = new Meo("Meo A", 10 ,"Meo meo ");
+meoa.addsoluong(5).addsoluong(10)
+console.log(meoa.soluong);
+
+
+
