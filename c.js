@@ -18,7 +18,7 @@
 //     fn();
 // }
 // dosth(console.log)
-const a = [1,2,3,4,5,6,7,8,9,10]
+// const a = [1,2,3,4,5,6,7,8,9,10]
 // them du lieu o cuoi cho mang : push()
 // a.push(10);
 //xoa du lieu o cuoi mang : pop()
@@ -30,5 +30,33 @@ const a = [1,2,3,4,5,6,7,8,9,10]
 //xoa vi tri bat dau toi ket thuc
 // a.splice(1,3);
 // them vao vi tri bat ky trong mang
-a.splice(4,0,12)
-console.log(a);
+// a.splice(4,0,12)
+// console.log(a);
+
+// function dosth(fn){
+//     return fn()
+// }
+
+// console.log(dosth(function(){
+//     return true
+// }))
+// const a = ["A","B","C","D","E","F","G"];
+// console.log(a.map(function(chuoi , index){
+//     return chuoi + ++index
+// }));
+
+const mangperson = [
+    {name : 'Teo' , age : 80} ,
+    {name : 'Ti' , age : 15} ,
+    {name : 'Tun' , age : 30},
+    {name : 'Hoa', age : 30}
+]
+// function getAllNameArr nhan vao 1 mang tra ve 1 mang moi
+// chua tat ca cac ten
+function getAllNameArr(arr){
+    return arr.map(function(person){
+        return person.name;
+    })
+}
+console.log(getAllNameArr(mangperson));
+
