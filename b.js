@@ -87,28 +87,23 @@
 // }
 // const a = new Triangle(3,4);
 // console.log(a.canhhuyen());
-class Dongvat{
-    constructor(name , age ){
-        this.name = name;
-        this.age = age
-        this.soluong = []
-    }
-    sayhello(){
-        console.log("Hello");
-    }
-    addsoluong(number){
-        this.soluong.push(number)
-    }
-}
-class Meo extends Dongvat{
-    constructor(name , age , tiengnoi){
-       super(name , age);
-        this.tiengnoi = tiengnoi
-    }
-}
-const meoa = new Meo("Meo A", 10 ,"Meo meo ");
-meoa.addsoluong(5).addsoluong(10)
-console.log(meoa.soluong);
+// class Dongvat{
+//     constructor(name , age ){
+//         this.name = name;
+//         this.age = age
+//     }
+//     sayhello(){
+//         console.log("Hello");
+//     }
+// }
+// class Meo extends Dongvat{
+//     constructor(name , age , tiengnoi){
+//        super(name , age);
+//         this.tiengnoi = tiengnoi
+//     }
+// }
+// const meoa = new Meo("Meo A", 10 ,"Meo meo ");
+
 
 
 
