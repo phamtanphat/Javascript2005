@@ -105,10 +105,19 @@
 // getMale(mangperson , "female")
 
 // reduce : ham gop
-const numbers = [1,2,4,10,12,11,0,-1,29,30]
-let b = numbers.reduce(function(a,b){
-    console.log("A " + a);
-    console.log("B " + b);
-    return a + b
-},5);
-console.log(b);
+// const numbers = ["A","B","A","B","C","C","D","E"]
+// let b = numbers.reduce(function(a,b){
+//    if(typeof a[b] === 'undefined'){
+//         a[b] =1 
+//    }else{
+//        a[b]++
+//    }
+//    return a
+// },{});
+// console.log(b);
+//sort
+const nubmers = ["a","b","c","e","A"];
+let newnumbers = nubmers.sort(function(a ,b ){
+   return a - b
+});
+console.log(newnumbers)
