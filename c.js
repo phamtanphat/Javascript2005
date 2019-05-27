@@ -81,25 +81,34 @@
 //     })
 // }
 // console.log(getArrsochan(numbers))
-const mangperson = [
-    {name : 'Teo' , male : 'male'},
-    {name : 'Ti' , male : 'male'},
-    {name : 'Tun' , male : 'male'},
-    {name : 'Hoa', male : 'female'}
-]
+// const mangperson = [
+//     {name : 'Teo' , male : 'male'},
+//     {name : 'Ti' , male : 'male'},
+//     {name : 'Tun' , male : 'male'},
+//     {name : 'Hoa', male : 'female'}
+// ]
 
 //function truyen vào 1 mảng và 1 giá trị cho giới tính
 // trả về 1 mảng mới và theo yêu cầu của giới tính truyền vào
-function getMale(arr , male){
-    let mangfiltered = arr.filter(function(person){
-        if(person.male === male){
-            return true
-        }else{
-            return false;
-        }
+// function getMale(arr , male){
+//     let mangfiltered = arr.filter(function(person){
+//         if(person.male === male){
+//             return true
+//         }else{
+//             return false;
+//         }
         
-    });
-    console.log(mangfiltered);
-}
+//     });
+//     console.log(mangfiltered);
+// }
 
-getMale(mangperson , "female")
+// getMale(mangperson , "female")
+
+// reduce : ham gop
+const numbers = [1,2,4,10,12,11,0,-1,29,30]
+let b = numbers.reduce(function(a,b){
+    console.log("A " + a);
+    console.log("B " + b);
+    return a + b
+},5);
+console.log(b);
