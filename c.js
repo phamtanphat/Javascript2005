@@ -117,7 +117,12 @@
 // console.log(b);
 //sort
 const nubmers = ["a","b","c","e","A"];
-let newnumbers = nubmers.sort(function(a ,b ){
-   return a - b
-});
-console.log(newnumbers)
+let a = [...nubmers];
+function sorarr(arrnumbers){
+    let newnumbers = arrnumbers.sort(function(a ,b ){
+        return a <b
+     });
+     return newnumbers;
+}
+console.log(a);
+console.log(sorarr(nubmers));
